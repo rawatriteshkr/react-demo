@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 //import Registration from './registration';
 //import TriangleArea from './area_triangle';
 //import CurrentDateTime from './current_day_time';
-import Print from './current_window_print';
+//import Print from './current_window_print';
+import CurrentDate from './current_date';
 
 //const countryName = "India";
 
@@ -23,9 +24,12 @@ class App extends React.Component{
 			</div>
 			<div>
 				<CurrentDateTime/>
-			</div>*/
+			</div>
 			<div>
 				<Print/>
+			</div>*/
+			<div>
+				<CurrentDate/>
 			</div>
 		)
 	}
