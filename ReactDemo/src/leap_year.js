@@ -5,10 +5,19 @@ class LeapYear extends React.Component{
 
 	leapYear = () =>{
 		var year = document.getElementById('year').value;
-		if((year%4 == 0) || ((year%100 == 0)) && (year%400 == 0)){
-			document.getElementById('print_message').innerHTML = 'Leap Year';
+		if(year%100 === 0){
+			if(year%400 === 0){
+				document.getElementById('print_message').innerHTML = 'Leap Year';
+			}else{
+				document.getElementById('print_message').innerHTML = 'Not Leap Year';
+			}
 		}else{
-			document.getElementById('print_message').innerHTML = 'Not Leap Year';
+			if(year%4 === 0){
+				document.getElementById('print_message').innerHTML = 'Leap Year';
+			}else{
+				document.getElementById('print_message').innerHTML = 'Not Leap Year';
+			}
+			
 		}
 	}
 
