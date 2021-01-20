@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 //import Admin from './admin';
 //import Registration from './registration';
 //import TriangleArea from './area_triangle';
-import CurrentDateTime from './current_day_time';
+//import CurrentDateTime from './current_day_time';
+import Print from './current_window_print';
 
 //const countryName = "India";
 
@@ -19,9 +20,12 @@ class App extends React.Component{
 			</div>*/
 			/*<div>
 				<TriangleArea/>
-			</div>*/
+			</div>
 			<div>
 				<CurrentDateTime/>
+			</div>*/
+			<div>
+				<Print/>
 			</div>
 		)
 	}
